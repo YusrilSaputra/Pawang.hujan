@@ -1,0 +1,395 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #222;
+}
+
+.wrapper {
+  display: flex;
+  background: #222;
+  width: 100%;
+  height: 75px;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 15px rgba(0, 0, 0, .5);
+  z-index: 999;
+}
+
+.logo {
+  color: #0bc6f5;
+  padding: 20px;
+  font-size: 2em;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation li {
+  padding: 25px;
+}
+
+.navigation li a {
+  font-size: 1.2em;
+  color: #f52929;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: .3s ease-in-out;
+}
+
+.active {
+  padding: 10px;
+  color: #000 !important;
+  background-color: #0bc6f5;
+  border-radius: 10px;
+}
+
+.navigation li a:hover {
+  color: #0bc6f5;
+}
+
+.container {
+  margin: 40px auto;
+  margin-top: 100px;
+  max-width: 900px;
+  height: 500px;
+  position: relative;
+  background: linear-gradient(0deg, #4b79a1,#283e51);
+  border-radius: 25px;
+  box-shadow: 0 1px 15px rgba(0, 0, 0, .5);
+}
+
+header {
+  transform: translateY(25px);
+}
+
+header h1 {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  text-align: center;
+}
+
+header h1 span {
+  color: #0bc6f5;
+}
+
+main {
+  display: flex;
+  position: relative;
+  margin: 20px;
+  max-width: 850px;
+  height: 400px;
+  justify-content: space-between;
+  align-items: end;
+}
+
+article {
+  width: 60%;
+  height: 350px;
+  position: relative;
+}
+
+article h3 {
+  color: #0bc6f5;
+  font-size: 3em;
+  text-align: center;
+  transform: translateY(50px);
+}
+
+article p {
+  color: #fff;
+  text-align: center;
+  transform: translateY(100px);
+}
+
+aside {
+  width: 40%;
+  height: 350px;
+  position: relative;
+}
+
+aside img {
+  height: 400px;
+  position: absolute;
+  left: 0;
+  bottom: -32px;
+}
+
+.container-dua {
+  display: flex;
+  margin: 40px auto;
+  max-width: 900px;
+  height: 200px;
+  justify-content: space-between;
+  align-items: end;
+  /* background: rgba(255 , 255, 255, .2); */
+  border-radius: 25px;
+}
+
+.card {
+  width: 30%;
+  height: 100px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.card img {
+  max-width: 120px;
+  position: absolute;
+  top: -109px;
+  left: 50px;
+  transform: rotateY(.5turn);
+}
+
+.card p {
+  font-size: 1.2em;
+  padding: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: -70px;
+  right: 50px;
+  border-radius: 10px;
+}
+
+.card h4 {
+  font-size: 1.5em;
+  text-align: center;
+  transform: translateY(15px);
+}
+
+.card button {
+  padding: 10px;
+  background-color: #ff2d2d;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  top: 25px;
+  left: 95px;
+}
+
+.card button:active {
+  background-color: #d62828;
+}
+
+/* card 2 */
+.card2 {
+  width: 30%;
+  height: 100px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.card2 img {
+  max-width: 120px;
+  position: absolute;
+  top: -150px;
+  left: 75px;
+  transform: rotate(-85deg);
+}
+
+.card2 p {
+  font-size: 1.2em;
+  padding: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: -40px;
+  right: 110px;
+  border-radius: 10px;
+}
+
+.card2 h4 {
+  font-size: 1.5em;
+  text-align: center;
+  transform: translateY(15px);
+}
+
+.card2 button {
+  padding: 10px;
+  background-color: #ff2d2d;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  top: 25px;
+  left: 95px;
+}
+
+.card2 button:active {
+  background-color: #d62828;
+}
+
+/* card 3 */
+.card3 {
+  width: 30%;
+  height: 100px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.card3 img {
+  max-width: 120px;
+  position: absolute;
+  top: -109px;
+  right: 50px;
+}
+
+.card3 p {
+  font-size: 1.2em;
+  padding: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: -70px;
+  left: 50px;
+  border-radius: 10px;
+}
+
+.card3 h4 {
+  font-size: 1.5em;
+  text-align: center;
+  transform: translateY(15px);
+}
+
+.card3 button {
+  padding: 10px;
+  background-color: #ff2d2d;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  top: 25px;
+  left: 95px;
+}
+
+.card3 button:active {
+  background-color: #d62828;
+}
+
+@media screen and (max-width: 600px){
+  .container {
+    max-width: 500px;
+  }
+  aside img{
+    height: 400px;
+    transform: translateX(-100px);
+  }
+  .container-dua {
+    display: block;
+  }
+  .card {
+    width: 100%;
+    height: 200px;
+  }
+  .card img {
+    width: 120px;
+    position: absolute;
+    top: -10px;
+    left: 100px;
+    transform: rotateY(.5turn);
+  }
+  .card p {
+    font-size: 3em;
+    background-color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 150px;
+    border-radius: 10px;
+  }
+  .card h4 {
+    font-size: 3em;
+    text-align: center;
+    transform: translateY(95px);
+  }
+  .card button {
+    width: 200px;
+    padding: 10px;
+    background-color: #ff2d2d;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    top: 100px;
+    left: 140px;
+  }
+  .card button:active {
+    background-color: #d62828;
+  }
+  /* card 2 */
+  .card2 {
+    margin: 20px auto;
+    width: 100%;
+    height: 200px;
+  }
+  .card2 img {
+    width: 120px;
+    position: absolute;
+    top: -10px;
+    left: 100px;
+    transform: rotateY(.5turn);
+  }
+  .card2 p {
+    font-size: 3em;
+    background-color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 150px;
+    border-radius: 10px;
+  }
+  .card2 h4 {
+    font-size: 3em;
+    text-align: center;
+    transform: translateY(95px);
+  }
+  .card2 button {
+    width: 200px;
+    padding: 10px;
+    background-color: #ff2d2d;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    top: 100px;
+    left: 140px;
+  }
+  .card2 button:active {
+    background-color: #d62828;
+  }
+  /* card 3 */
+  .card3 {
+    width: 100%;
+    height: 200px;
+  }
+  .card3 img {
+    width: 120px;
+    position: absolute;
+    top: -10px;
+    left: 100px;
+    transform: rotateY(.5turn);
+  }
+  .card3 p {
+    font-size: 3em;
+    background-color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 150px;
+    border-radius: 10px;
+  }
+  .card3 h4 {
+    font-size: 3em;
+    text-align: center;
+    transform: translateY(95px);
+  }
+  .card3 button {
+    width: 200px;
+    padding: 10px;
+    background-color: #ff2d2d;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    top: 100px;
+    left: 140px;
+  }
+  .card3 button:active {
+    background-color: #d62828;
+  }
+}
